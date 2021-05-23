@@ -1,0 +1,41 @@
+#input-container {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+#input,
+#button {
+    font-size: 4em;
+}
+
+#button {
+    background-color: goldenrod;
+    color: darkslateblue;
+    visibility: collapse;
+}
+
+#button:disabled {
+    color: -internal-light-dark(rgba(16, 16, 16, 0.3), rgba(255, 255, 255, 0.3));
+    background-color: -internal-light-dark(rgba(239, 239, 239, 0.3), rgba(19, 1, 1, 0.3));
+    border-color: -internal-light-dark(rgba(118, 118, 118, 0.3), rgba(195, 195, 195, 0.3));
+}
+
+#button, #result {
+    margin-top: 10px;
+}
+
+#result {
+    text-align: center;
+    font-size: 4em;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: lavender;
+}
